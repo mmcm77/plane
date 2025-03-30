@@ -1,5 +1,5 @@
 import { defineConfig } from "vite";
 
 export default defineConfig({
-  base: "/plane/",
+  base: "https://mmcm77.github.io/plane/",
 });

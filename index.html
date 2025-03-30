@@ -13,24 +13,11 @@
         display: block;
       }
     </style>
-    <!-- Import Three.js from CDN -->
-    <script
-      async
-      src="https://unpkg.com/es-module-shims@1.8.0/dist/es-module-shims.js"
-    ></script>
-
-    <script type="importmap">
-      {
-        "imports": {
-          "three": "https://unpkg.com/three@0.155.0/build/three.module.js",
-          "three/examples/jsm/controls/OrbitControls.js": "https://unpkg.com/three@0.155.0/examples/jsm/controls/OrbitControls.js"
-        }
-      }
-    </script>
-    <script type="module" crossorigin src="https://mmcm77.github.io/plane/assets/index-342e39c0.js"></script>
+    <script type="module" crossorigin src="/plane/assets/index-342e39c0.js"></script>
   </head>
   <body>
     <div id="app"></div>
+    <!-- Vite will process this during build -->
     
   </body>
 </html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Three.js Debug</title>
+  </head>
+  <body>
+    <h1>Three.js Debug</h1>
+    <div id="debug"></div>
+
+    <script type="module">
+      const debugEl = document.getElementById("debug");
+
+      try {
+        debugEl.innerHTML += "<p>Attempting to import Three.js...</p>";
+
+        import("three")
+          .then((module) => {
+            debugEl.innerHTML += "<p>✅ Successfully imported Three.js</p>";
+            debugEl.innerHTML += `<p>THREE version: ${module.REVISION}</p>`;
+          })
+          .catch((err) => {
+            debugEl.innerHTML += `<p>❌ Error importing Three.js: ${err.message}</p>`;
+            console.error(err);
+          });
+      } catch (err) {
+        debugEl.innerHTML += `<p>❌ Exception: ${err.message}</p>`;
+        console.error(err);
+      }
+    </script>
+  </body>
+</html>

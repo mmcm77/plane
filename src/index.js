@@ -1,5 +1,8 @@
+// Import external libraries
 import * as THREE from "three";
 import { OrbitControls } from "three/examples/jsm/controls/OrbitControls.js";
+
+// Import local modules
 import { createCity } from "./city.js";
 import { createSkybox } from "./skybox.js";
 import { PlaneControls } from "./controls.js";

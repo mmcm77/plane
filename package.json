@@ -1,0 +1,18 @@
+{
+  "name": "plane-game",
+  "version": "1.0.0",
+  "description": "3D plane game to shoot down UFOs",
+  "main": "src/index.js",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "three": "^0.155.0",
+    "howler": "^2.2.3"
+  },
+  "devDependencies": {
+    "vite": "^4.4.9"
+  }
+}

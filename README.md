@@ -2,6 +2,10 @@
 
 A browser-based 3D game where players pilot a plane to shoot down UFOs that are hovering over a city.
 
+## Play the Game
+
+You can play the game online at: [https://yourusername.github.io/plane/](https://yourusername.github.io/plane/)
+
 ## Requirements
 
 - 3D environment with city landscape
@@ -34,6 +38,21 @@ A browser-based 3D game where players pilot a plane to shoot down UFOs that are 
    npm run dev
    ```
 4. Open your browser at the URL shown in the terminal (usually http://localhost:5173)
+
+## Deployment
+
+To deploy the game to GitHub Pages:
+
+1. Build the project:
+   ```
+   npm run build
+   ```
+2. Deploy to GitHub Pages:
+   ```
+   npm run deploy
+   ```
+
+This will publish the game to https://yourusername.github.io/plane/
 
 ## Controls
 

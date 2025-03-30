@@ -4,4 +4,11 @@ export default {
   server: {
     host: true,
   },
+  base: "/plane/",
+  build: {
+    outDir: "dist",
+    assetsDir: "assets",
+    emptyOutDir: true,
+    sourcemap: false,
+  },
 };
